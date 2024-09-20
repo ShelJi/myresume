@@ -1,0 +1,66 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    text-align: center;
+}
+
+.hero img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(/src/assets/shelj-low-res.jpg);
+    background-size: cover;
+}
+
+.hero h1 {
+    margin-top: 50px;
+    font-size: 4rem;
+    font-weight: var(--font-weight);
+}
+
+.hero h1 span {
+    font-weight: var(--font-weight);
+    background-image: var(--bg-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: var(--margin-content);
+    font-size: var(--font-size-text);
+    width: 70%;
+    text-align: center;
+}
+
+.hero-resume {
+    margin: 30px 0;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    background-image: var(--bg-img);
+    text-align: center;
+    border-radius: 10px;
+    background-size: 200% auto;
+    box-shadow: 0 0 10px var(--box-shadow);
+    transition: .5s ease;
+}
+
+.hero a{
+    text-decoration: none;
+}
+
+.hero-resume:hover {
+    transform: scale(1.05);
+    background-position: right center;
+    box-shadow: 0 0 10px var(--box-shadow);
+}
+
+@media (max-width: 992px) {
+    .hero p {
+        /* width: 50%; */
+        text-align: left;
+    }
+}

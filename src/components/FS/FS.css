@@ -1,0 +1,78 @@
+.FSproject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.FSproject h1 {
+    font-size: var(--header);
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.FSproject .FSproject-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 50px;
+}
+
+.FSproject-grid .FSproject-item {
+    height: 150px;
+    width: 260px;
+    position: relative;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    transition: transform .5s ease;
+}
+
+.FSproject-grid .FSproject-item::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: var(--bg-text);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 2px var(--box-shadow);
+    z-index: -1;
+}
+
+.FSproject-grid .FSproject-item:hover {
+    transform: scale(var(--scale));
+    box-shadow: 0 0 20px var(--box-shadow);
+}
+
+.FSproject-grid .FSproject-title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: var(--img-bg);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    transition: .5s ease;
+}
+
+.FSproject-grid .FSproject-title:hover {
+    font-size: 1.3rem;
+}
+
+.FSproject img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+@media (min-width: 850px) {
+    .FSproject .FSproject-grid {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}

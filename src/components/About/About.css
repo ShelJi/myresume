@@ -1,0 +1,118 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: var(--margin-topic);
+}
+
+.about h1 {
+    font-size: var(--header);
+    /* color: var(--active-color); */
+}
+
+.about .internships h2 {
+    font-size: 1.5rem;
+    color: var(--active-color);
+}
+
+.about .about-content {
+    display: flex;
+    padding: 20px;
+}
+
+.about .about-description {
+    width: 50%;
+    padding: 30px;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    line-height: 40px;
+    font-size: var(--font-size-text);
+}
+
+.about .about-status {
+    width: 50%;
+    padding: 30px;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about .about-status .about-status-bar {
+    display: flex;
+    transition: transform .5s ease;
+}
+
+.about .about-status .about-status-bar:hover {
+    transform: scale(1.11);
+}
+
+.about .about-status .about-status-bar label {
+    min-width: 150px;
+}
+
+.about .about-status .about-status-bar hr {
+    outline: none;
+    border: none;
+    background-image: var(--bg-text);
+    border-radius: var(--border-radius);
+}
+
+@media (max-width: 992px) {
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about .about-description {
+        width: 100%;
+    }
+
+    .about .about-status {
+        width: 100%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about .about-content {
+        padding: 30px;
+    }
+
+    .about .about-description {
+        padding: 0px;
+        padding-left: 0;
+        line-height: 30px;
+    }
+
+    .about .about-status {
+        margin-top: 50px;
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .about .about-status .about-status-bar {
+        display: flex;
+        transition: transform .5s ease;
+    }
+
+    .about .about-status .about-status-bar hr {
+        outline: none;
+        border: none;
+        background-image: var(--bg-text);
+        border-radius: var(--border-radius);
+    }
+
+    .about .internships h2 {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1rem;
+        color: var(--active-color);
+    }
+}

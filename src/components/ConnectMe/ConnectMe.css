@@ -1,0 +1,102 @@
+.connect-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.connect-me form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.connect-me .connect-heading {
+    font-size: var(--header);
+    margin-bottom: 60px;
+}
+
+.connect-me a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.connect-me .connect-me-links {
+    width: 80%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.connect-me .connect-icon {
+    transition: transform .5s ease;
+}
+
+.connect-me .connect-icon:hover {
+    transform: scale(2);
+}
+
+.connect-me .connect-me-mail {
+    padding: 40px;
+    border-radius: var(--border-radius);
+    background-image: var(--bg-text);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.connect-me .connect-me-mail input,
+.connect-me .connect-me-mail textarea {
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+.connect-me .connect-me-mail input {
+    height: 3rem;
+}
+
+.connect-me button {
+    outline: none;
+    box-shadow: none;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    background-image: var(--bg-img);
+    text-align: center;
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: var(--time);
+    margin: 20px;
+    width: 160px;
+}
+
+.connect-me button:hover {
+    transform: scale(var(--scale));
+    background-position: right center;
+    box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.connect-me .connect-me-links a {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 640px) {
+    .connect-me .connect-me-mail {
+        width: 90%;
+    }
+
+    .connect-me .bottom {
+        display: flex;
+    }
+
+    .connect-me .bottom span {
+        margin: 20px;
+    }
+}

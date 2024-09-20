@@ -1,0 +1,4 @@
+npm create vite@latest 
+
+##################### for smooth scroll in browser
+npm install react-anchor-link-smooth-scroll

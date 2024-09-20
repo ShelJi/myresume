@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+
+    --bg-color: hsl(0, 3%, 14%);
+    --text-color: white;
+    --trans-bg: hsla(0, 3%, 14%, 0.911);
+    --img-bg: rgba(0, 0, 0, 0.8);
+    --box-shadow: #eee;
+    --active-color: #A83279;
+    --passive-color: #D38312;
+    --footer: black;
+
+    --bg-img: linear-gradient(to right, #D38312 0%, #A83279 51%, #D38312 100%);
+    --bg-text: linear-gradient(to right, #D38312 10%, #A83279 100%);
+    --time: .5s;
+    --scale: 1.05;
+
+    --header: 3rem;
+    --font-weight: 600;
+    --font-size-text: 1.1rem;
+    --border-radius: 30px;
+    --margin-topic: 150px;
+    --margin-content: 20px;
+
+    transition: 1.5s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+
+    /* outline: green solid .5px; */
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+@media (max-width: 640px) {
+    :root {
+        --header: 2rem;
+    }
+}
+
+body[data-theme="light"] {
+    --bg-color: hsl(0, 7%, 79%);
+    --text-color: black;
+    --trans-bg: hsla(0, 7%, 79%, 0.911);
+    --img-bg: rgba(177, 175, 175, 0.8);
+    --box-shadow: #000000;
+    --active-color: #A83279;
+    --passive-color: #D38312;
+    --footer: white;
+
+    transition: 1.5s ease-in-out;
+}

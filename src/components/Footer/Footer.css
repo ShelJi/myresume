@@ -1,0 +1,31 @@
+.footer{
+    height: 20vh;
+    width: 100%;
+    background: var(--footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer .footer-icon{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: transform .5s ease;
+}
+
+.footer .footer-icon:hover{
+    transform: scale(2);
+
+}
+
+.footer .footer-icon:not(:hover){
+    transform: scale(1);
+}
+
+
+@media (max-width: 640px) {
+    .footer{
+        gap: 30px;
+    }
+}
