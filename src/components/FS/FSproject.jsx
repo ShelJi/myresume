@@ -7,12 +7,12 @@ import project5 from '../../assets/OIP.jpg';
 import project6 from '../../assets/OIP.jpg';
 
 const FSprojects = [
-    { id: 1, src: project1, alt: 'Description for 1st project', href: 'https://github.com/sheljin73', text: 'TODO App' },
+    { id: 1, src: project1, alt: 'Description for 1st project', href: 'https://github.com/shelji', text: 'TODO App' },
     { id: 2, src: project2, alt: 'Description for 2nd project', href: 'https://shelj.pythonanywhere.com', text: 'Mobile Shop Website' },
-    { id: 3, src: project3, alt: 'Description for 3rd project', href: 'https://github.com/sheljin73', text: 'BackEnd TODO App' },
-    { id: 4, src: project4, alt: 'Description for 4th project', href: 'https://github.com/sheljin73', text: 'Hotel Web Application' },
-    { id: 5, src: project5, alt: 'Description for 5th project', href: 'https://github.com/sheljin73', text: 'Elegant Login Page' },
-    { id: 6, src: project6, alt: 'Description for 6th project', href: 'https://github.com/sheljin73', text: 'Weather Web Application' },
+    { id: 3, src: project3, alt: 'Description for 3rd project', href: 'https://github.com/shelji', text: 'BackEnd TODO App' },
+    { id: 4, src: project4, alt: 'Description for 4th project', href: 'https://github.com/shelji', text: 'Hotel Web Application' },
+    { id: 5, src: project5, alt: 'Description for 5th project', href: 'https://github.com/shelji', text: 'Elegant Login Page' },
+    { id: 6, src: project6, alt: 'Description for 6th project', href: 'https://github.com/shelji', text: 'Weather Web Application' },
 ];
 
 const FSproject = () => {
